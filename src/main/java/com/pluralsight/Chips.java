@@ -26,19 +26,34 @@ public class Chips implements OrderItem {
     }
 
     private String capitalize(String str) {
+        // Check if string is empty or null
         if (str == null || str.isEmpty()) {
             return str;
         }
-        // Handle multi-word chip types like "sour cream and onion"
+
+        // Split string into words
+
         String[] words = str.split(" ");
-        StringBuilder result = new StringBuilder();
+
+        //  Create empty string for result
+        String result = "";
+
+        //  Go through each word
         for (int i = 0; i < words.length; i++) {
+
             if (i > 0) {
-                result.append(" ");
+                result = result + " ";
             }
-            result.append(words[i].substring(0, 1).toUpperCase())
-                    .append(words[i].substring(1));
+
+
+            String word = words[i];
+            String firstLetter = word.substring(0, 1);
+            String restOfWord = word.substring(1);
+            String capitalizedWord = firstLetter.toUpperCase() + restOfWord;
+
+
+            result = result + capitalizedWord;
         }
-        return result.toString();
+        return result;
     }
 }

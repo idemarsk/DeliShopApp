@@ -36,10 +36,10 @@ public class UserInterface {
     }
 
     private int showHomeScreen() {
-        System.out.println("\n╔════════════════════════════════╗");
-        System.out.println("║   DELI-CIOUS SANDWICH SHOP    ║");
-        System.out.println("║      Welcome to Deli Store!     ║");
-        System.out.println("╚════════════════════════════════╝");
+        System.out.println("\n╔══════════════════════════════════╗");
+        System.out.println("║   DELI-CIOUS SANDWICH SHOP       ║");
+        System.out.println("║      Welcome to Deli Store!      ║");
+        System.out.println("╚══════════════════════════════════╝");
         System.out.println("\n1) New Order");
         System.out.println("0) Exit");
         System.out.print("\nEnter your choice: ");
@@ -47,7 +47,7 @@ public class UserInterface {
     }
 
     private int showOrderMenu() {
-        System.out.println("\n🧺 ORDER MENU");
+        System.out.println("\n ORDER MENU");
         System.out.println("═══════════════════════════════");
         System.out.println("1) Add Sandwich");
         System.out.println("2) Add Drink");
@@ -126,10 +126,10 @@ public class UserInterface {
 
     private String promptForBreadType() {
         System.out.println("\nAvailable Bread Types:");
-        System.out.println("  - white");
-        System.out.println("  - wheat");
-        System.out.println("  - rye");
-        System.out.println("  - wrap");
+        System.out.println("  1) white");
+        System.out.println("  2) wheat");
+        System.out.println("  3) rye");
+        System.out.println("  4) wrap");
         System.out.print("Enter bread type: ");
         return scanner.nextLine().trim().toLowerCase();
     }
@@ -153,18 +153,18 @@ public class UserInterface {
     private List<Topping> promptForMeats() {
         List<Topping> meats = new ArrayList<>();
         System.out.println("\nAvailable Meats:");
-        System.out.println("  - steak");
-        System.out.println("  - ham");
-        System.out.println("  - salami");
-        System.out.println("  - roast beef");
-        System.out.println("  - chicken");
-        System.out.println("  - bacon");
+        System.out.println("  1) steak");
+        System.out.println("  2) ham");
+        System.out.println("  3) salami");
+        System.out.println("  4) roast beef");
+        System.out.println("  5) chicken");
+        System.out.println("  6) bacon");
 
         while (true) {
-            System.out.print("\nEnter meat type (or 'done' to finish): ");
+            System.out.print("\nEnter meat type (or '0' to finish): ");
             String meat = scanner.nextLine().trim().toLowerCase();
 
-            if (meat.equals("done")) {
+            if (meat.equals("0")) {
                 break;
             }
 
@@ -184,16 +184,16 @@ public class UserInterface {
     private List<Topping> promptForCheeses() {
         List<Topping> cheeses = new ArrayList<>();
         System.out.println("\nAvailable Cheeses:");
-        System.out.println("  - american");
-        System.out.println("  - provolone");
-        System.out.println("  - cheddar");
-        System.out.println("  - swiss");
+        System.out.println("  1) american");
+        System.out.println("  2) provolone");
+        System.out.println("  3) cheddar");
+        System.out.println("  4) swiss");
 
         while (true) {
-            System.out.print("\nEnter cheese type (or 'done' to finish): ");
+            System.out.print("\nEnter cheese type (or '0' to finish): ");
             String cheese = scanner.nextLine().trim().toLowerCase();
 
-            if (cheese.equals("done")) {
+            if (cheese.equals("0")) {
                 break;
             }
 
@@ -213,21 +213,21 @@ public class UserInterface {
     private List<String> promptForRegularToppings() {
         List<String> toppings = new ArrayList<>();
         System.out.println("\nAvailable Regular Toppings (FREE):");
-        System.out.println("  - lettuce");
-        System.out.println("  - peppers");
-        System.out.println("  - onions");
-        System.out.println("  - tomatoes");
-        System.out.println("  - jalapenos");
-        System.out.println("  - cucumbers");
-        System.out.println("  - pickles");
-        System.out.println("  - guacamole");
-        System.out.println("  - mushrooms");
+        System.out.println("  1) lettuce");
+        System.out.println("  2) peppers");
+        System.out.println("  3) onions");
+        System.out.println("  4) tomatoes");
+        System.out.println("  5) jalapenos");
+        System.out.println("  6) cucumbers");
+        System.out.println("  7) pickles");
+        System.out.println("  8) guacamole");
+        System.out.println("  9) mushrooms");
 
         while (true) {
-            System.out.print("\nEnter topping (or 'done' to finish): ");
+            System.out.print("\nEnter topping (or '0' to finish): ");
             String topping = scanner.nextLine().trim().toLowerCase();
 
-            if (topping.equals("done")) {
+            if (topping.equals("0")) {
                 break;
             }
 
@@ -243,18 +243,18 @@ public class UserInterface {
     private List<String> promptForSauces() {
         List<String> sauces = new ArrayList<>();
         System.out.println("\nAvailable Sauces (FREE):");
-        System.out.println("  - mayo");
-        System.out.println("  - mustard");
-        System.out.println("  - ketchup");
-        System.out.println("  - ranch");
-        System.out.println("  - thousand islands");
-        System.out.println("  - vinaigrette");
+        System.out.println("  1) mayo");
+        System.out.println("  2) mustard");
+        System.out.println("  3) ketchup");
+        System.out.println("  4) ranch");
+        System.out.println("  5) thousand islands");
+        System.out.println("  6) vinaigrette");
 
         while (true) {
-            System.out.print("\nEnter sauce (or 'done' to finish): ");
+            System.out.print("\nEnter sauce (or '0' to finish): ");
             String sauce = scanner.nextLine().trim().toLowerCase();
 
-            if (sauce.equals("done")) {
+            if (sauce.equals("0")) {
                 break;
             }
 
@@ -281,21 +281,21 @@ public class UserInterface {
 
     private String promptForDrinkSize() {
         System.out.println("\nAvailable Sizes:");
-        System.out.println("  - small");
-        System.out.println("  - medium");
-        System.out.println("  - large");
+        System.out.println("  S) small");
+        System.out.println("  M) medium");
+        System.out.println("  L) large");
         System.out.print("Enter size: ");
         return scanner.nextLine().trim().toLowerCase();
     }
 
     private String promptForDrinkFlavor() {
         System.out.println("\nAvailable Flavors:");
-        System.out.println("  - coke");
-        System.out.println("  - sprite");
-        System.out.println("  - fanta");
-        System.out.println("  - lemonade");
-        System.out.println("  - iced tea");
-        System.out.println("  - water");
+        System.out.println("  1) coke");
+        System.out.println("  2) sprite");
+        System.out.println("  3) fanta");
+        System.out.println("  4) lemonade");
+        System.out.println("  5) iced tea");
+        System.out.println("  6) water");
         System.out.print("Enter flavor: ");
         return scanner.nextLine().trim().toLowerCase();
     }
@@ -313,10 +313,10 @@ public class UserInterface {
 
     private String promptForChipType() {
         System.out.println("\nAvailable Chip Types:");
-        System.out.println("  - regular");
-        System.out.println("  - bbq");
-        System.out.println("  - sour cream and onion");
-        System.out.println("  - salt and vinegar");
+        System.out.println("  1) regular");
+        System.out.println("  2) bbq");
+        System.out.println("  3) sour cream and onion");
+        System.out.println("  4) salt and vinegar");
         System.out.print("Enter chip type: ");
         return scanner.nextLine().trim().toLowerCase();
     }

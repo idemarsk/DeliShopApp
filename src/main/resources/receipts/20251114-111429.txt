@@ -1,0 +1,29 @@
+═══════════════════════════════════════════
+          DELI-CIOUS SANDWICH SHOP
+             ORDER RECEIPT
+═══════════════════════════════════════════
+Date: 11/14/2025
+Time: 11:14:29
+═══════════════════════════════════════════
+
+4" Wheat Sandwich (Toasted)
+  Meats:
+    - Ham (Extra)
+    - Bacon
+  Cheeses:
+    - Swiss
+  Toppings:
+    - Onions
+  Sauces:
+    - Mayo
+
+  Price: $8.75
+
+═══════════════════════════════════════════
+TOTAL: $8.75
+═══════════════════════════════════════════
+
+      Thank you for your order!
+         Please come again!
+
+═══════════════════════════════════════════
